@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Kumar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <button id="Home"  >Home</button>
+        <button id="Career"  >Career</button>
+        <button id="Project"  >Project</button>
+        <button id="Contact"  >Contact</button>
+        <button id="Contact"  >Contact</button>
+    </div>
+    <p>This is Ashish Portfolio</p>
+    <img src="./pics/ashish.jpg" height="300px" width="300px" alter="ashish-pic">
+    <div id="my-todo">
+        <input id="todo">
+        <button id="btn">ADD</button>
+        <ul id="list">
+            <li>Task One</li>
+        </ul>
+    </div>
+    <script >
+        let todoBox=document.getElementById('todo')
+        let addBtn=document.getElementById('btn')
+        let todoList=document.getElementById('list')
+        addBtn.onclick=function(){
+            let todo=todoBox.value
+            let newTask=document.createElement('li')
+            newTask.innerText=todo;
+            todoList.appendChild(newTask)
+        }
+    </script>
+</body>
+</html>
